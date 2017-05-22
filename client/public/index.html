@@ -4,12 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="lib/jshp.js"></script>
+    <script src="app/app.init.js"></script>
+    <script src="app/app.components.js"></script>
+    <script src="app/app.controllers.js"></script>
+    <script src="app/components/utils.js"></script>
+    <script src="app/components/router.js"></script>
+    <script src="app/components/table/table.init.js"></script>
+    <script src="app/components/table/table.head.js"></script>
+    <script src="app/components/table/table.js"></script>
+    <script src="app/controllers/main.js"></script>
+    <script src="app/controllers/about.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="navigation">
+        <div class="container">
+            <ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#about">About this demo</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="app-view" class="container">
         <p>Demo</p>
         <div class="table-container">
             <table class="table">
